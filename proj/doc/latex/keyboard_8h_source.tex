@@ -1,0 +1,26 @@
+\hypertarget{keyboard_8h_source}{}\doxysection{keyboard.\+h}
+\label{keyboard_8h_source}\index{C:/Users/jtoma/Downloads/MINIX-\/LCOM/MINIX-\/LCOM/shared/g4/proj/src/controller/keyboard/keyboard.h@{C:/Users/jtoma/Downloads/MINIX-\/LCOM/MINIX-\/LCOM/shared/g4/proj/src/controller/keyboard/keyboard.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_LCOM\_KEYBOARD\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_LCOM\_KEYBOARD\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <minix/sysutil.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}i8042.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}controller/KBC/KBC.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define IRQ\_LINE 1 }}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define KBC\_OUTBUFFER 0x60 }}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{20 int (keyboard\_unsubscribe\_interrupts)();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{27 int (keyboard\_subscribe\_interrupts)(uint8\_t *bit\_no);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

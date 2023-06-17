@@ -1,0 +1,53 @@
+\hypertarget{model_8h_source}{}\doxysection{model.\+h}
+\label{model_8h_source}\index{C:/Users/jtoma/Downloads/MINIX-\/LCOM/MINIX-\/LCOM/shared/g4/proj/src/model/model.h@{C:/Users/jtoma/Downloads/MINIX-\/LCOM/MINIX-\/LCOM/shared/g4/proj/src/model/model.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_LCOM\_MODEL\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_LCOM\_MODEL\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <minix/sysutil.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}controller/KBC/KBC.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}controller/mouse/mouse.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}controller/video/graphics.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}sprite.h"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{25 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{26     RUNNING,}
+\DoxyCodeLine{27     EXIT,}
+\DoxyCodeLine{28 \} \mbox{\hyperlink{group__model_gaa51313be2faacb739a18fdeecefbac75}{SystemState}};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{40 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{41     START,}
+\DoxyCodeLine{42     GAME,}
+\DoxyCodeLine{43     INSTRUCTIONS,}
+\DoxyCodeLine{44     END}
+\DoxyCodeLine{45 \} \mbox{\hyperlink{group__model_gaa3041ae4242c0dd57a126d17505443b2}{MenuState}};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{56 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{57     PENCIL,}
+\DoxyCodeLine{58     BUCKET,}
+\DoxyCodeLine{59     RECTANGLE,}
+\DoxyCodeLine{60 \} \mbox{\hyperlink{group__model_gaef280547494fa5b005304cef8a81f993}{ToolState}};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \mbox{\hyperlink{group__model_gaa51313be2faacb739a18fdeecefbac75}{SystemState}} is\_playing;}
+\DoxyCodeLine{64 \mbox{\hyperlink{group__model_gaa3041ae4242c0dd57a126d17505443b2}{MenuState}} game\_state;}
+\DoxyCodeLine{65 \mbox{\hyperlink{group__model_gaef280547494fa5b005304cef8a81f993}{ToolState}} tool;}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 \textcolor{comment}{/*}}
+\DoxyCodeLine{68 \textcolor{comment}{}}
+\DoxyCodeLine{69 \textcolor{comment}{typedef enum \{}}
+\DoxyCodeLine{70 \textcolor{comment}{    MENU,}}
+\DoxyCodeLine{71 \textcolor{comment}{    PAINTING,}}
+\DoxyCodeLine{72 \textcolor{comment}{    EXITED,}}
+\DoxyCodeLine{73 \textcolor{comment}{\} GameState}}
+\DoxyCodeLine{74 \textcolor{comment}{}}
+\DoxyCodeLine{75 \textcolor{comment}{*/}}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77 \textcolor{keywordtype}{void} setupsprites();}
+\DoxyCodeLine{78 \textcolor{keywordtype}{void} destroy\_sprites();}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

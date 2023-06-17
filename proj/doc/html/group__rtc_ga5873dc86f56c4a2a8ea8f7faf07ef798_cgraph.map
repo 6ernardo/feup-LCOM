@@ -1,0 +1,4 @@
+<map id="rtc_is_binary" name="rtc_is_binary">
+<area shape="rect" id="node1" title="Checks if the RTC is in binary mode." alt="" coords="5,5,101,32"/>
+<area shape="rect" id="node2" href="$group__rtc.html#ga8e4030507a3afad53e5b80851f90d193" title="Reads a value from the RTC." alt="" coords="149,5,228,32"/>
+</map>

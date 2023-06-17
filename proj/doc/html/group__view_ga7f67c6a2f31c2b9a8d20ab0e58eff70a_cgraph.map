@@ -1,0 +1,4 @@
+<map id="quit_button_pressed" name="quit_button_pressed">
+<area shape="rect" id="node1" title="Checks if the quit button is pressed." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$group__view.html#gaddac27bc1ef2943686b5ca444e62dde8" title="Checks if the mouse cursor is over a sprite at the specified position." alt="" coords="192,5,321,32"/>
+</map>

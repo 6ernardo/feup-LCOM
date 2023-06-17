@@ -1,0 +1,26 @@
+\hypertarget{sprite_8h_source}{}\doxysection{sprite.\+h}
+\label{sprite_8h_source}\index{C:/Users/jtoma/Downloads/MINIX-\/LCOM/MINIX-\/LCOM/shared/g4/proj/src/model/sprite.h@{C:/Users/jtoma/Downloads/MINIX-\/LCOM/MINIX-\/LCOM/shared/g4/proj/src/model/sprite.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_LCOM\_SPRITE\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_LCOM\_SPRITE\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}controller/video/graphics.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{25 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{26     uint16\_t height;}
+\DoxyCodeLine{27     uint16\_t width;}
+\DoxyCodeLine{28     uint32\_t *colors;}
+\DoxyCodeLine{29     uint32\_t color;}
+\DoxyCodeLine{30     uint8\_t pressed;}
+\DoxyCodeLine{31 \} \mbox{\hyperlink{struct_sprite}{Sprite}}; }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{39 \mbox{\hyperlink{struct_sprite}{Sprite}} *\mbox{\hyperlink{group__sprite_gacb93792ebc27a32413e0b31624c6d9b1}{create\_sprite\_xpm}}(xpm\_map\_t sprite);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{49 \mbox{\hyperlink{struct_sprite}{Sprite}} *\mbox{\hyperlink{group__sprite_ga13b8a2097c825d810049270eb4467d37}{create\_sprite\_button}}(uint16\_t width, uint16\_t height, uint32\_t color);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{56 \textcolor{keywordtype}{void} \mbox{\hyperlink{group__sprite_ga607cfeb4f019a84c346eb3bce9da0420}{destroy\_sprite}}(\mbox{\hyperlink{struct_sprite}{Sprite}} *sprite);}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,97 @@
+\hypertarget{group__timer}{}\doxysection{timer}
+\label{group__timer}\index{timer@{timer}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__timer_gaf2c04fa8e97ffa748fd3f612886a92a7}{timer\+\_\+set\+\_\+frequency}} (uint8\+\_\+t timer, uint32\+\_\+t freq)
+\begin{DoxyCompactList}\small\item\em Changes the operating frequency of a timer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__timer_gac57a7e1140a7e00ad95ac5488d2a671b}{timer\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes timer interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__timer_ga34c22ebdcbc43e47f0ad8406704d3610}{timer\+\_\+unsubscribe\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes timer interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__timer_ga703c60b40c8c49607d6ecb6fef82d27a}{timer\+\_\+get\+\_\+conf}} (uint8\+\_\+t timer, uint8\+\_\+t $\ast$st)
+\begin{DoxyCompactList}\small\item\em Reads the input timer configuration via read-\/back command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using the i8254 timers 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__timer_ga703c60b40c8c49607d6ecb6fef82d27a}\label{group__timer_ga703c60b40c8c49607d6ecb6fef82d27a}} 
+\index{timer@{timer}!timer\_get\_conf@{timer\_get\_conf}}
+\index{timer\_get\_conf@{timer\_get\_conf}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{timer\_get\_conf()}{timer\_get\_conf()}}
+{\footnotesize\ttfamily int() timer\+\_\+get\+\_\+conf (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{timer,  }\item[{uint8\+\_\+t $\ast$}]{st }\end{DoxyParamCaption})}
+
+
+
+Reads the input timer configuration via read-\/back command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & Timer whose config to read (Ranges from 0 to 2) \\
+\hline
+{\em st} & Address of memory position to be filled with the timer config \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__timer_gaf2c04fa8e97ffa748fd3f612886a92a7}\label{group__timer_gaf2c04fa8e97ffa748fd3f612886a92a7}} 
+\index{timer@{timer}!timer\_set\_frequency@{timer\_set\_frequency}}
+\index{timer\_set\_frequency@{timer\_set\_frequency}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{timer\_set\_frequency()}{timer\_set\_frequency()}}
+{\footnotesize\ttfamily int() timer\+\_\+set\+\_\+frequency (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{timer,  }\item[{uint32\+\_\+t}]{freq }\end{DoxyParamCaption})}
+
+
+
+Changes the operating frequency of a timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & Timer to configure. \\
+\hline
+{\em freq} & Timer operating frequency \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{group__timer_gaf2c04fa8e97ffa748fd3f612886a92a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__timer_gac57a7e1140a7e00ad95ac5488d2a671b}\label{group__timer_gac57a7e1140a7e00ad95ac5488d2a671b}} 
+\index{timer@{timer}!timer\_subscribe\_int@{timer\_subscribe\_int}}
+\index{timer\_subscribe\_int@{timer\_subscribe\_int}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{timer\_subscribe\_int()}{timer\_subscribe\_int()}}
+{\footnotesize\ttfamily int() timer\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes timer interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if it is successful, not 0 if otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__timer_ga34c22ebdcbc43e47f0ad8406704d3610}\label{group__timer_ga34c22ebdcbc43e47f0ad8406704d3610}} 
+\index{timer@{timer}!timer\_unsubscribe\_interrupts@{timer\_unsubscribe\_interrupts}}
+\index{timer\_unsubscribe\_interrupts@{timer\_unsubscribe\_interrupts}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{timer\_unsubscribe\_interrupts()}{timer\_unsubscribe\_interrupts()}}
+{\footnotesize\ttfamily int() timer\+\_\+unsubscribe\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes timer interrupts. 
+
+\begin{DoxyReturn}{Returns}
+0 if it is successful, not 0 if otherwise 
+\end{DoxyReturn}

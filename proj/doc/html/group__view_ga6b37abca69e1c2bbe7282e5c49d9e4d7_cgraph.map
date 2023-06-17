@@ -1,0 +1,4 @@
+<map id="pressed_color" name="pressed_color">
+<area shape="rect" id="node1" title="Updates the drawing color based on the user&#39;s selection." alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node2" href="$group__view.html#ga85bd2315169825d1e4bb1cac821b10a1" title="Determines the color index based on the mouse position." alt="" coords="156,5,281,32"/>
+</map>

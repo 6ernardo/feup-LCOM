@@ -1,0 +1,5 @@
+<map id="draw_game" name="draw_game">
+<area shape="rect" id="node1" title="Draws the game elements on the screen." alt="" coords="5,5,93,32"/>
+<area shape="rect" id="node2" href="$group__view.html#ga6db4230a0003a09515d78b790d8ec52d" title="Draws a sprite on the screen at the specified coordinates." alt="" coords="141,5,260,32"/>
+<area shape="rect" id="node3" href="$group__graphics.html#ga021aa9e0417e5176f0cb783b877c19da" title="Paints pixel in certain position of certain color." alt="" coords="308,5,391,32"/>
+</map>

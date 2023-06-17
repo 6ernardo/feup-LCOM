@@ -1,0 +1,4 @@
+<map id="draw_line_pointer" name="draw_line_pointer">
+<area shape="rect" id="node1" title="Draws a circular drawing pointer with the specified radius and color." alt="" coords="5,5,127,32"/>
+<area shape="rect" id="node2" href="$group__graphics.html#ga021aa9e0417e5176f0cb783b877c19da" title="Paints pixel in certain position of certain color." alt="" coords="175,5,258,32"/>
+</map>

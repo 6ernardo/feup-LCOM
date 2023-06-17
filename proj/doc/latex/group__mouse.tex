@@ -1,0 +1,121 @@
+\hypertarget{group__mouse}{}\doxysection{mouse}
+\label{group__mouse}\index{mouse@{mouse}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_mouse_info}{Mouse\+Info}}
+\begin{DoxyCompactList}\small\item\em Mouse information structure. This structure holds information related to mouse events and cursor position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__mouse_ga20285aed4b3ef45812cd967532dd09db}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes mouse interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes mouse interrupts. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__mouse_ga210374b50462acdedab00df64d5cea3c}\label{group__mouse_ga210374b50462acdedab00df64d5cea3c}} 
+void() {\bfseries mouse\+\_\+ih} ()
+\begin{DoxyCompactList}\small\item\em Mouse interrupt handler. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__mouse_ga8d6ee7592c47e8f3830a140c1c36587d}\label{group__mouse_ga8d6ee7592c47e8f3830a140c1c36587d}} 
+void {\bfseries mouse\+\_\+sync\+\_\+bytes} ()
+\begin{DoxyCompactList}\small\item\em Reads the mouse output buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__mouse_ga2e235868a79d1a554279c352e8a19f59}\label{group__mouse_ga2e235868a79d1a554279c352e8a19f59}} 
+void() {\bfseries mouse\+\_\+bytes\+\_\+to\+\_\+packet} ()
+\begin{DoxyCompactList}\small\item\em Converts the mouse bytes to a mouse struct. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga1703c3c5b61eef30d724b15cafd1d75e}{mouse\+\_\+write}} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Writes a command to the mouse and waits for acknowledgement. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga8ede930d34433ca1e2cce6990d7a9898}{mouse\+\_\+read\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Reads the mouse output buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__mouse_gae13f88e922e1339355456062ad9fa359}\label{group__mouse_gae13f88e922e1339355456062ad9fa359}} 
+int {\bfseries getX} ()
+\item 
+\mbox{\Hypertarget{group__mouse_gaab81944f0a14bba932c0931899951937}\label{group__mouse_gaab81944f0a14bba932c0931899951937}} 
+int {\bfseries getY} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__mouse_ga1b8d5211c0c6e4335916182f05b372e9}\label{group__mouse_ga1b8d5211c0c6e4335916182f05b372e9}} 
+uint8\+\_\+t {\bfseries Mouse\+Info\+::right\+\_\+click}
+\item 
+\mbox{\Hypertarget{group__mouse_ga68e34e8536b15b4126c1fa06d3486ab6}\label{group__mouse_ga68e34e8536b15b4126c1fa06d3486ab6}} 
+uint8\+\_\+t {\bfseries Mouse\+Info\+::left\+\_\+click}
+\item 
+\mbox{\Hypertarget{group__mouse_gaea93542f026563a5105b656668dd65e1}\label{group__mouse_gaea93542f026563a5105b656668dd65e1}} 
+uint8\+\_\+t {\bfseries Mouse\+Info\+::middle\+\_\+click}
+\item 
+\mbox{\Hypertarget{group__mouse_gadb99988f306f351395685c70bba1fde0}\label{group__mouse_gadb99988f306f351395685c70bba1fde0}} 
+int16\+\_\+t {\bfseries Mouse\+Info\+::x}
+\item 
+\mbox{\Hypertarget{group__mouse_gaa7a6bd8f32f999e498fbd703482b3d6f}\label{group__mouse_gaa7a6bd8f32f999e498fbd703482b3d6f}} 
+int16\+\_\+t {\bfseries Mouse\+Info\+::y}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using the mouse 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__mouse_ga8ede930d34433ca1e2cce6990d7a9898}\label{group__mouse_ga8ede930d34433ca1e2cce6990d7a9898}} 
+\index{mouse@{mouse}!mouse\_read\_data@{mouse\_read\_data}}
+\index{mouse\_read\_data@{mouse\_read\_data}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_read\_data()}{mouse\_read\_data()}}
+{\footnotesize\ttfamily int() mouse\+\_\+read\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads the mouse output buffer. 
+
+\begin{DoxyReturn}{Returns}
+0 if the data is successfully read, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{group__mouse_ga8ede930d34433ca1e2cce6990d7a9898_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga20285aed4b3ef45812cd967532dd09db}\label{group__mouse_ga20285aed4b3ef45812cd967532dd09db}} 
+\index{mouse@{mouse}!mouse\_subscribe\_int@{mouse\_subscribe\_int}}
+\index{mouse\_subscribe\_int@{mouse\_subscribe\_int}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe\_int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes mouse interrupts. 
+
+\begin{DoxyReturn}{Returns}
+0 if it is successful, not 0 if otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}\label{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}} 
+\index{mouse@{mouse}!mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}}
+\index{mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe\_int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes mouse interrupts. 
+
+\begin{DoxyReturn}{Returns}
+0 if it is successful, not 0 if otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mouse_ga1703c3c5b61eef30d724b15cafd1d75e}\label{group__mouse_ga1703c3c5b61eef30d724b15cafd1d75e}} 
+\index{mouse@{mouse}!mouse\_write@{mouse\_write}}
+\index{mouse\_write@{mouse\_write}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_write()}{mouse\_write()}}
+{\footnotesize\ttfamily int() mouse\+\_\+write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command }\end{DoxyParamCaption})}
+
+
+
+Writes a command to the mouse and waits for acknowledgement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command to be sent to the mouse. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the command is successfully sent and acknowledged by the mouse, 1 otherwise. 
+\end{DoxyReturn}

@@ -1,0 +1,4 @@
+<map id="help_button_pressed" name="help_button_pressed">
+<area shape="rect" id="node1" title="Checks if the help button is pressed and handles its state." alt="" coords="5,5,147,32"/>
+<area shape="rect" id="node2" href="$group__view.html#gaddac27bc1ef2943686b5ca444e62dde8" title="Checks if the mouse cursor is over a sprite at the specified position." alt="" coords="195,5,324,32"/>
+</map>

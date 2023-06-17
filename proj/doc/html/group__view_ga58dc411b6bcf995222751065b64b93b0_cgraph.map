@@ -1,0 +1,5 @@
+<map id="mouse_over_clickable" name="mouse_over_clickable">
+<area shape="rect" id="node1" title="Checks if the mouse is over a clickable element." alt="" coords="5,31,154,57"/>
+<area shape="rect" id="node2" href="$group__view.html#ga85bd2315169825d1e4bb1cac821b10a1" title="Determines the color index based on the mouse position." alt="" coords="204,5,329,32"/>
+<area shape="rect" id="node3" href="$group__view.html#gaddac27bc1ef2943686b5ca444e62dde8" title="Checks if the mouse cursor is over a sprite at the specified position." alt="" coords="202,56,331,83"/>
+</map>

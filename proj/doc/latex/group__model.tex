@@ -1,0 +1,93 @@
+\hypertarget{group__model}{}\doxysection{model}
+\label{group__model}\index{model@{model}}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__model_gaa51313be2faacb739a18fdeecefbac75}{System\+State}} \{ {\bfseries RUNNING}
+, {\bfseries EXIT}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration representing the system state. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__model_gaa3041ae4242c0dd57a126d17505443b2}{Menu\+State}} \{ {\bfseries START}
+, {\bfseries GAME}
+, {\bfseries INSTRUCTIONS}
+, {\bfseries END}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration representing the menu state. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__model_gaef280547494fa5b005304cef8a81f993}{Tool\+State}} \{ {\bfseries PENCIL}
+, {\bfseries BUCKET}
+, {\bfseries RECTANGLE}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration representing the tool state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__model_ga3a1fb6bfd7ddaf06f86a3fdfbd22b38d}\label{group__model_ga3a1fb6bfd7ddaf06f86a3fdfbd22b38d}} 
+void {\bfseries setupsprites} ()
+\item 
+\mbox{\Hypertarget{group__model_ga8fdbc6c7bfca3ef4a8800a3cdc19d932}\label{group__model_ga8fdbc6c7bfca3ef4a8800a3cdc19d932}} 
+void {\bfseries destroy\+\_\+sprites} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__model_gac9a4233206756474623911ecf0536d46}\label{group__model_gac9a4233206756474623911ecf0536d46}} 
+\mbox{\hyperlink{group__model_gaa51313be2faacb739a18fdeecefbac75}{System\+State}} {\bfseries is\+\_\+playing}
+\item 
+\mbox{\Hypertarget{group__model_gabf9a318754c87c0f982c08e62eccc7fc}\label{group__model_gabf9a318754c87c0f982c08e62eccc7fc}} 
+\mbox{\hyperlink{group__model_gaa3041ae4242c0dd57a126d17505443b2}{Menu\+State}} {\bfseries game\+\_\+state}
+\item 
+\mbox{\Hypertarget{group__model_gaa9e5ebcb01db059646c312506fb84825}\label{group__model_gaa9e5ebcb01db059646c312506fb84825}} 
+\mbox{\hyperlink{group__model_gaef280547494fa5b005304cef8a81f993}{Tool\+State}} {\bfseries tool}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using the model 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__model_gaa3041ae4242c0dd57a126d17505443b2}\label{group__model_gaa3041ae4242c0dd57a126d17505443b2}} 
+\index{model@{model}!MenuState@{MenuState}}
+\index{MenuState@{MenuState}!model@{model}}
+\doxysubsubsection{\texorpdfstring{MenuState}{MenuState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__model_gaa3041ae4242c0dd57a126d17505443b2}{Menu\+State}}}
+
+
+
+Enumeration representing the menu state. 
+
+The Menu\+State enumeration represents the possible states of a menu. It contains the following values\+:
+\begin{DoxyItemize}
+\item START\+: Represents the start of the menu.
+\item GAME\+: Represents the game state.
+\item INSTRUCTIONS\+: Represents the instructions state.
+\item END\+: Represents the end of the menu. 
+\end{DoxyItemize}\mbox{\Hypertarget{group__model_gaa51313be2faacb739a18fdeecefbac75}\label{group__model_gaa51313be2faacb739a18fdeecefbac75}} 
+\index{model@{model}!SystemState@{SystemState}}
+\index{SystemState@{SystemState}!model@{model}}
+\doxysubsubsection{\texorpdfstring{SystemState}{SystemState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__model_gaa51313be2faacb739a18fdeecefbac75}{System\+State}}}
+
+
+
+Enumeration representing the system state. 
+
+The System\+State enumeration represents the possible states of a system. It contains the following values\+:
+\begin{DoxyItemize}
+\item RUNNING\+: Represents the running state of the system.
+\item EXIT\+: Represents the exit state of the system. 
+\end{DoxyItemize}\mbox{\Hypertarget{group__model_gaef280547494fa5b005304cef8a81f993}\label{group__model_gaef280547494fa5b005304cef8a81f993}} 
+\index{model@{model}!ToolState@{ToolState}}
+\index{ToolState@{ToolState}!model@{model}}
+\doxysubsubsection{\texorpdfstring{ToolState}{ToolState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__model_gaef280547494fa5b005304cef8a81f993}{Tool\+State}}}
+
+
+
+Enumeration representing the tool state. 
+
+The Tool\+State enumeration represents the possible states of a drawing tool. It contains the following values\+:
+\begin{DoxyItemize}
+\item PENCIL\+: Represents the pencil tool state.
+\item BUCKET\+: Represents the bucket tool state.
+\item RECTANGLE\+: Represents the rectangle tool state. 
+\end{DoxyItemize}

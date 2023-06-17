@@ -1,0 +1,4 @@
+<map id="draw_hline" name="draw_hline">
+<area shape="rect" id="node1" title="Draws a horizontal line on the frame buffer." alt="" coords="5,5,88,32"/>
+<area shape="rect" id="node2" href="$group__graphics.html#ga021aa9e0417e5176f0cb783b877c19da" title="Paints pixel in certain position of certain color." alt="" coords="136,5,219,32"/>
+</map>

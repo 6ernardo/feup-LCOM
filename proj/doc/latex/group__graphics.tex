@@ -1,0 +1,217 @@
+\hypertarget{group__graphics}{}\doxysection{graphics}
+\label{group__graphics}\index{graphics@{graphics}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__graphics_ga0e3d9bbfc61cddd43017c484fcbbd93b}{set\+\_\+graphic\+\_\+mode}} (uint16\+\_\+t submode)
+\begin{DoxyCompactList}\small\item\em Sets the graphic mode with the specified submode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__graphics_gaa86357e516b83208fb5e6c5786d93880}{set\+\_\+text\+\_\+mode}} ()
+\begin{DoxyCompactList}\small\item\em Sets the display mode to text mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__graphics_ga2f32bdfa4852737cd328287a85c7afff}{set\+\_\+frame\+\_\+buffer}} (uint16\+\_\+t mode, uint8\+\_\+t $\ast$$\ast$frame\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Sets up the frame buffer for the specified video mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__graphics_ga021aa9e0417e5176f0cb783b877c19da}{paint\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color, uint8\+\_\+t $\ast$frame\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Paints pixel in certain position of certain color. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__graphics_gaa80401a49b5ac32d66cfdab32257a686}{draw\+\_\+hline}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color, uint8\+\_\+t $\ast$frame\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Draws a horizontal line on the frame buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__graphics_ga58517250fd31c8c16965744cce7ae2f1}{draw\+\_\+rectangle}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color, uint8\+\_\+t $\ast$frame\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Draws rectangle starting in position (x,y) with width and height specified in parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__graphics_ga6c8cbff31c1e3d926b3571195a3d0b93}{invert\+\_\+pixel\+\_\+color}} (uint16\+\_\+t x, uint16\+\_\+t y, uint8\+\_\+t $\ast$frame\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Inverts the color of a pixel in the frame buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__graphics_ga31227f672745c8ab6360a5a1bcac283b}{convert\+\_\+to\+\_\+gray}} (uint16\+\_\+t x, uint16\+\_\+t y, uint8\+\_\+t $\ast$frame\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Converts a pixel to grayscale in the frame buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__graphics_ga9fcc2243068f8e628648febc0909c509}\label{group__graphics_ga9fcc2243068f8e628648febc0909c509}} 
+vbe\+\_\+mode\+\_\+info\+\_\+t {\bfseries mode\+\_\+info}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for outputing data to screen in graphics mode 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__graphics_ga31227f672745c8ab6360a5a1bcac283b}\label{group__graphics_ga31227f672745c8ab6360a5a1bcac283b}} 
+\index{graphics@{graphics}!convert\_to\_gray@{convert\_to\_gray}}
+\index{convert\_to\_gray@{convert\_to\_gray}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{convert\_to\_gray()}{convert\_to\_gray()}}
+{\footnotesize\ttfamily int convert\+\_\+to\+\_\+gray (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint8\+\_\+t $\ast$}]{frame\+\_\+buffer }\end{DoxyParamCaption})}
+
+
+
+Converts a pixel to grayscale in the frame buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X-\/coordinate of the pixel. \\
+\hline
+{\em y} & Y-\/coordinate of the pixel. \\
+\hline
+{\em frame\+\_\+buffer} & Pointer to the frame buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the pixel is converted to grayscale successfully, non-\/zero value otherwise.
+\end{DoxyReturn}
+This function converts the color of a pixel at the specified coordinates (x, y) in the frame buffer to grayscale. The color components (red, green, blue) of the pixel are extracted from the 32-\/bit color value. The average value of the color components is calculated to obtain the grayscale value. A grayscale color is created by setting the red, green, and blue components with the same grayscale value. The original color in the pixel is then replaced with the grayscale color. \mbox{\Hypertarget{group__graphics_gaa80401a49b5ac32d66cfdab32257a686}\label{group__graphics_gaa80401a49b5ac32d66cfdab32257a686}} 
+\index{graphics@{graphics}!draw\_hline@{draw\_hline}}
+\index{draw\_hline@{draw\_hline}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{draw\_hline()}{draw\_hline()}}
+{\footnotesize\ttfamily int draw\+\_\+hline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint32\+\_\+t}]{color,  }\item[{uint8\+\_\+t $\ast$}]{frame\+\_\+buffer }\end{DoxyParamCaption})}
+
+
+
+Draws a horizontal line on the frame buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X-\/coordinate of the starting point of the line \\
+\hline
+{\em y} & Y-\/coordinate of the starting point of the line \\
+\hline
+{\em len} & Length of the line in pixels \\
+\hline
+{\em color} & Color of the line to be drawn \\
+\hline
+{\em frame\+\_\+buffer} & Pointer to the frame buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the line is drawn successfully, non-\/zero value otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{group__graphics_gaa80401a49b5ac32d66cfdab32257a686_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_ga58517250fd31c8c16965744cce7ae2f1}\label{group__graphics_ga58517250fd31c8c16965744cce7ae2f1}} 
+\index{graphics@{graphics}!draw\_rectangle@{draw\_rectangle}}
+\index{draw\_rectangle@{draw\_rectangle}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{draw\_rectangle()}{draw\_rectangle()}}
+{\footnotesize\ttfamily int draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color,  }\item[{uint8\+\_\+t $\ast$}]{frame\+\_\+buffer }\end{DoxyParamCaption})}
+
+
+
+Draws rectangle starting in position (x,y) with width and height specified in parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Horizontal position of the beginning of the rectangle \\
+\hline
+{\em y} & Vertical position of the beginning of the rectangle \\
+\hline
+{\em width} & Width of the rectangle \\
+\hline
+{\em height} & Height of the rectangle \\
+\hline
+{\em color} & Color to fill the rectangle \\
+\hline
+{\em frame\+\_\+buffer} & Pointer to the frame buffer \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga58517250fd31c8c16965744cce7ae2f1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_ga6c8cbff31c1e3d926b3571195a3d0b93}\label{group__graphics_ga6c8cbff31c1e3d926b3571195a3d0b93}} 
+\index{graphics@{graphics}!invert\_pixel\_color@{invert\_pixel\_color}}
+\index{invert\_pixel\_color@{invert\_pixel\_color}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{invert\_pixel\_color()}{invert\_pixel\_color()}}
+{\footnotesize\ttfamily int invert\+\_\+pixel\+\_\+color (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint8\+\_\+t $\ast$}]{frame\+\_\+buffer }\end{DoxyParamCaption})}
+
+
+
+Inverts the color of a pixel in the frame buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X-\/coordinate of the pixel. \\
+\hline
+{\em y} & Y-\/coordinate of the pixel. \\
+\hline
+{\em frame\+\_\+buffer} & Pointer to the frame buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the pixel color is inverted successfully, non-\/zero value otherwise.
+\end{DoxyReturn}
+This function inverts the color of a pixel at the specified coordinates (x, y) in the frame buffer. The color of the pixel is then inverted by applying bitwise negation to each color component (R, G, B) of the 32-\/bit color. \mbox{\Hypertarget{group__graphics_ga021aa9e0417e5176f0cb783b877c19da}\label{group__graphics_ga021aa9e0417e5176f0cb783b877c19da}} 
+\index{graphics@{graphics}!paint\_pixel@{paint\_pixel}}
+\index{paint\_pixel@{paint\_pixel}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{paint\_pixel()}{paint\_pixel()}}
+{\footnotesize\ttfamily int paint\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color,  }\item[{uint8\+\_\+t $\ast$}]{frame\+\_\+buffer }\end{DoxyParamCaption})}
+
+
+
+Paints pixel in certain position of certain color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X-\/coordinate of the pixel \\
+\hline
+{\em y} & Y-\/coordinate of the pixel \\
+\hline
+{\em color} & Color of the pixel \\
+\hline
+{\em frame\+\_\+buffer} & Frame buffer to paint the pixel in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 upon success, 1 with failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__graphics_ga2f32bdfa4852737cd328287a85c7afff}\label{group__graphics_ga2f32bdfa4852737cd328287a85c7afff}} 
+\index{graphics@{graphics}!set\_frame\_buffer@{set\_frame\_buffer}}
+\index{set\_frame\_buffer@{set\_frame\_buffer}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{set\_frame\_buffer()}{set\_frame\_buffer()}}
+{\footnotesize\ttfamily int set\+\_\+frame\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode,  }\item[{uint8\+\_\+t $\ast$$\ast$}]{frame\+\_\+buffer }\end{DoxyParamCaption})}
+
+
+
+Sets up the frame buffer for the specified video mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Video mode to set up the frame buffer for. \\
+\hline
+{\em frame\+\_\+buffer} & Pointer to the frame buffer that will be allocated and populated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the frame buffer is set up successfully, non-\/zero value otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__graphics_ga0e3d9bbfc61cddd43017c484fcbbd93b}\label{group__graphics_ga0e3d9bbfc61cddd43017c484fcbbd93b}} 
+\index{graphics@{graphics}!set\_graphic\_mode@{set\_graphic\_mode}}
+\index{set\_graphic\_mode@{set\_graphic\_mode}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{set\_graphic\_mode()}{set\_graphic\_mode()}}
+{\footnotesize\ttfamily int set\+\_\+graphic\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{submode }\end{DoxyParamCaption})}
+
+
+
+Sets the graphic mode with the specified submode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em submode} & Submode of the graphic mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if it is successful, not 0 if otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__graphics_gaa86357e516b83208fb5e6c5786d93880}\label{group__graphics_gaa86357e516b83208fb5e6c5786d93880}} 
+\index{graphics@{graphics}!set\_text\_mode@{set\_text\_mode}}
+\index{set\_text\_mode@{set\_text\_mode}!graphics@{graphics}}
+\doxysubsubsection{\texorpdfstring{set\_text\_mode()}{set\_text\_mode()}}
+{\footnotesize\ttfamily int set\+\_\+text\+\_\+mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the display mode to text mode. 
+
+\begin{DoxyReturn}{Returns}
+0 if it is successful, not 0 if otherwise 
+\end{DoxyReturn}

@@ -1,0 +1,4 @@
+<map id="set_frame_buffers" name="set_frame_buffers">
+<area shape="rect" id="node1" title="Sets up the frame buffers for the specified mode." alt="" coords="5,5,129,32"/>
+<area shape="rect" id="node2" href="$group__graphics.html#ga2f32bdfa4852737cd328287a85c7afff" title="Sets up the frame buffer for the specified video mode." alt="" coords="177,5,293,32"/>
+</map>

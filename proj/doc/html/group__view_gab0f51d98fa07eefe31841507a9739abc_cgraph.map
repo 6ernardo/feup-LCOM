@@ -1,0 +1,6 @@
+<map id="processRectangle" name="processRectangle">
+<area shape="rect" id="node1" title="Processes the drawing of a rectangle." alt="" coords="5,5,131,32"/>
+<area shape="rect" id="node2" href="$group__graphics.html#ga58517250fd31c8c16965744cce7ae2f1" title="Draws rectangle starting in position (x,y) with width and height specified in parameters." alt="" coords="179,5,287,32"/>
+<area shape="rect" id="node3" href="$group__graphics.html#gaa80401a49b5ac32d66cfdab32257a686" title="Draws a horizontal line on the frame buffer." alt="" coords="335,5,417,32"/>
+<area shape="rect" id="node4" href="$group__graphics.html#ga021aa9e0417e5176f0cb783b877c19da" title="Paints pixel in certain position of certain color." alt="" coords="465,5,549,32"/>
+</map>

@@ -1,0 +1,454 @@
+\hypertarget{group__view}{}\doxysection{view}
+\label{group__view}\index{view@{view}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__view_ga42f4903ab89aff9e3ee0206c52cf710a}{draw\+\_\+mouse}} ()
+\begin{DoxyCompactList}\small\item\em Draws the mouse cursor based on the current state and position. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__view_ga3ad9f04212e7602618a0dd7ad4afbd4e}{set\+\_\+frame\+\_\+buffers}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Sets up the frame buffers for the specified mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__view_ga0d157d997329169f936545f9985e334b}\label{group__view_ga0d157d997329169f936545f9985e334b}} 
+void {\bfseries swap\+\_\+buffers} ()
+\begin{DoxyCompactList}\small\item\em Swaps the contents of the main frame buffer and the secondary frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__view_ga8b66d3de6f30a65a6436ccdb041f6cd2}\label{group__view_ga8b66d3de6f30a65a6436ccdb041f6cd2}} 
+void {\bfseries copy\+The\+Draw} ()
+\begin{DoxyCompactList}\small\item\em Copies the contents of the secondary frame buffer to the third frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__view_ga33017fa7ed294bf76a3ce6129d248bb3}\label{group__view_ga33017fa7ed294bf76a3ce6129d248bb3}} 
+void {\bfseries clean\+Secondary\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em Clears the contents of the secondary frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__view_ga65f6fac15ad2004d12c7ec7b9bff49da}\label{group__view_ga65f6fac15ad2004d12c7ec7b9bff49da}} 
+void {\bfseries clean\+Third\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em Clears the contents of the third frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__view_gafec31a4e36505c27fc2eb9a2d39c25b8}\label{group__view_gafec31a4e36505c27fc2eb9a2d39c25b8}} 
+void {\bfseries clean\+Third\+Buffer2} (uint32\+\_\+t drawing\+Color)
+\begin{DoxyCompactList}\small\item\em Clears the contents of the third frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__view_ga696b5311ca844b4d79ba0efbc30c1daa}\label{group__view_ga696b5311ca844b4d79ba0efbc30c1daa}} 
+void {\bfseries clean\+Backup\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em Clears the contents of the backup frame buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__view_ga6db4230a0003a09515d78b790d8ec52d}{draw\+\_\+sprite\+\_\+xpm}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sprite, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draws a sprite on the screen at the specified coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__view_ga0a9f56467341cbe24bd981d4b9960fdd}{draw\+\_\+game\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Draws the game menu on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__view_ga8f7acda4de2ff9ede5fca68d2db09959}{draw\+\_\+frame}} ()
+\begin{DoxyCompactList}\small\item\em Draws a single frame on the screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__view_ga3cef68220fcc611902108d6f0159e50f}{draw\+\_\+game}} ()
+\begin{DoxyCompactList}\small\item\em Draws the game elements on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__view_ga5a1cb3e572728c30b75f841aa9c228d6}{draw\+\_\+header}} ()
+\begin{DoxyCompactList}\small\item\em Draws the header section of the game screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__view_gafced46dd2087365054d1c1d71f181b8f}{draw\+Color}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a solid color rectangle on the secondary frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__view_ga28293fcbc0131d861c9b10f338a1a906}\label{group__view_ga28293fcbc0131d861c9b10f338a1a906}} 
+int {\bfseries sprite\+\_\+clicked} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sprite, int x, int y)
+\item 
+int \mbox{\hyperlink{group__view_ga3dd6b5ba7e4dab9a1568f422c19c3ec3}{draw\+\_\+line\+\_\+pointer}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t radius, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a circular drawing pointer with the specified radius and color. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__view_ga92fe90a17ba95b7702b618ccfe7e77ba}{draw\+Line\+Segment}} (uint16\+\_\+t xi, uint16\+\_\+t yi, uint16\+\_\+t xf, uint16\+\_\+t yf, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a line segment between two points in each mouse interrupt on the screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__view_ga7dbfe327ee927cdca33895b7a67b0b7e}{process\+Drawing}} (int x, int y, int prevX, int prevY, uint32\+\_\+t drawing\+Color)
+\begin{DoxyCompactList}\small\item\em Process drawing operation between two points. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__view_gaface0710712eeff3c3721b361e2db58f}{update\+Clock}} ()
+\begin{DoxyCompactList}\small\item\em Updates the clock display on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__view_ga9c7affc2cddce92fb686db89c972d48c}{initialize\+\_\+number\+\_\+sprites}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the number sprites used for displaying digits. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__view_gab0f51d98fa07eefe31841507a9739abc}{process\+Rectangle}} (int x, int y, int prevX, int prevY, uint32\+\_\+t drawing\+Color)
+\begin{DoxyCompactList}\small\item\em Processes the drawing of a rectangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__view_gaad11e5cc0615113ac553c2e20c03ec84}\label{group__view_gaad11e5cc0615113ac553c2e20c03ec84}} 
+void {\bfseries invert\+Color} ()
+\begin{DoxyCompactList}\small\item\em Inverts the color of the pixels on the third frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__view_ga1baba5efbb19633a2599910f30d50bdd}\label{group__view_ga1baba5efbb19633a2599910f30d50bdd}} 
+void {\bfseries gray\+\_\+components} ()
+\begin{DoxyCompactList}\small\item\em Converts the colors of the current drawing to grayscale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__view_gad285a228f3fe778791b704007f3268bf}{backup\+\_\+draw}} ()
+\begin{DoxyCompactList}\small\item\em Backs up the current drawing to a backup frame buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__view_ga0309786986381ff4008d41f518d5aa50}{invert\+\_\+backup\+\_\+draw}} ()
+\begin{DoxyCompactList}\small\item\em Inverts the backup frame buffer to the current drawing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__view_ga78f217009cd3cf7b5bc1721616302c65}{draw\+\_\+instructions}} ()
+\begin{DoxyCompactList}\small\item\em Draws the instructions page based on the current inst\+\_\+page value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__view_gaeddc6e768c81b853d71b5f90b3e1dbfb}{draw\+\_\+tool\+\_\+outline}} ()
+\begin{DoxyCompactList}\small\item\em Draws the outline of the selected drawing tool. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for drawing the game 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__view_gad285a228f3fe778791b704007f3268bf}\label{group__view_gad285a228f3fe778791b704007f3268bf}} 
+\index{view@{view}!backup\_draw@{backup\_draw}}
+\index{backup\_draw@{backup\_draw}!view@{view}}
+\doxysubsubsection{\texorpdfstring{backup\_draw()}{backup\_draw()}}
+{\footnotesize\ttfamily void backup\+\_\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Backs up the current drawing to a backup frame buffer. 
+
+The \mbox{\hyperlink{group__view_gad285a228f3fe778791b704007f3268bf}{backup\+\_\+draw()}} function copies the contents of the current drawing in the third frame buffer to a backup frame buffer. It uses the memcpy() function to perform a memory copy operation. \mbox{\Hypertarget{group__view_ga8f7acda4de2ff9ede5fca68d2db09959}\label{group__view_ga8f7acda4de2ff9ede5fca68d2db09959}} 
+\index{view@{view}!draw\_frame@{draw\_frame}}
+\index{draw\_frame@{draw\_frame}!view@{view}}
+\doxysubsubsection{\texorpdfstring{draw\_frame()}{draw\_frame()}}
+{\footnotesize\ttfamily void draw\+\_\+frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws a single frame on the screen. 
+
+The \mbox{\hyperlink{group__view_ga8f7acda4de2ff9ede5fca68d2db09959}{draw\+\_\+frame()}} function is responsible for drawing a single frame on the screen based on the current game state. It performs different drawing operations depending on the game state. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__view_ga8f7acda4de2ff9ede5fca68d2db09959_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__view_ga3cef68220fcc611902108d6f0159e50f}\label{group__view_ga3cef68220fcc611902108d6f0159e50f}} 
+\index{view@{view}!draw\_game@{draw\_game}}
+\index{draw\_game@{draw\_game}!view@{view}}
+\doxysubsubsection{\texorpdfstring{draw\_game()}{draw\_game()}}
+{\footnotesize\ttfamily int draw\+\_\+game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the game elements on the screen. 
+
+This function draws various sprites representing numbers and letters for the game. The sprites are positioned at specific coordinates on the screen.
+
+\begin{DoxyReturn}{Returns}
+0 indicating successful drawing of the game elements. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__view_ga3cef68220fcc611902108d6f0159e50f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__view_ga0a9f56467341cbe24bd981d4b9960fdd}\label{group__view_ga0a9f56467341cbe24bd981d4b9960fdd}} 
+\index{view@{view}!draw\_game\_menu@{draw\_game\_menu}}
+\index{draw\_game\_menu@{draw\_game\_menu}!view@{view}}
+\doxysubsubsection{\texorpdfstring{draw\_game\_menu()}{draw\_game\_menu()}}
+{\footnotesize\ttfamily void draw\+\_\+game\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the game menu on the screen. 
+
+The \mbox{\hyperlink{group__view_ga0a9f56467341cbe24bd981d4b9960fdd}{draw\+\_\+game\+\_\+menu()}} function is used to draw the game menu on the screen. It calls the \mbox{\hyperlink{group__view_ga6db4230a0003a09515d78b790d8ec52d}{draw\+\_\+sprite\+\_\+xpm()}} function to draw individual sprites representing different elements of the game menu at specific coordinates on the screen. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__view_ga0a9f56467341cbe24bd981d4b9960fdd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__view_ga5a1cb3e572728c30b75f841aa9c228d6}\label{group__view_ga5a1cb3e572728c30b75f841aa9c228d6}} 
+\index{view@{view}!draw\_header@{draw\_header}}
+\index{draw\_header@{draw\_header}!view@{view}}
+\doxysubsubsection{\texorpdfstring{draw\_header()}{draw\_header()}}
+{\footnotesize\ttfamily void draw\+\_\+header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the header section of the game screen. 
+
+The \mbox{\hyperlink{group__view_ga5a1cb3e572728c30b75f841aa9c228d6}{draw\+\_\+header()}} function is responsible for drawing the header section of the game screen. It initializes an array of colors representing the available drawing colors. It fills the top portion of the secondary frame buffer with a light gray color (0x\+DDDDDD) to serve as the header background.
+
+The function then draws rectangular color swatches and icons for the eraser and bucket tools. It iterates through the color array and calls the \mbox{\hyperlink{group__view_gafced46dd2087365054d1c1d71f181b8f}{draw\+Color()}} function to draw rectangular color swatches at specific positions on the header. The x coordinate is incremented by 79 pixels for each color swatch to create a spaced layout. The eraser and bucket icons are drawn after the color swatches. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__view_ga5a1cb3e572728c30b75f841aa9c228d6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__view_ga78f217009cd3cf7b5bc1721616302c65}\label{group__view_ga78f217009cd3cf7b5bc1721616302c65}} 
+\index{view@{view}!draw\_instructions@{draw\_instructions}}
+\index{draw\_instructions@{draw\_instructions}!view@{view}}
+\doxysubsubsection{\texorpdfstring{draw\_instructions()}{draw\_instructions()}}
+{\footnotesize\ttfamily void draw\+\_\+instructions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the instructions page based on the current inst\+\_\+page value. 
+
+If inst\+\_\+page is 1, it draws the first instruction page along with the next arrow button. If inst\+\_\+page is 2, it draws the second instruction page along with the previous arrow button. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__view_ga78f217009cd3cf7b5bc1721616302c65_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__view_ga3dd6b5ba7e4dab9a1568f422c19c3ec3}\label{group__view_ga3dd6b5ba7e4dab9a1568f422c19c3ec3}} 
+\index{view@{view}!draw\_line\_pointer@{draw\_line\_pointer}}
+\index{draw\_line\_pointer@{draw\_line\_pointer}!view@{view}}
+\doxysubsubsection{\texorpdfstring{draw\_line\_pointer()}{draw\_line\_pointer()}}
+{\footnotesize\ttfamily int draw\+\_\+line\+\_\+pointer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{radius,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a circular drawing pointer with the specified radius and color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the center of the circular pointer. \\
+\hline
+{\em y} & The y-\/coordinate of the center of the circular pointer. \\
+\hline
+{\em radius} & The radius of the circular pointer. \\
+\hline
+{\em color} & The color of the circular pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, indicating that the circular pointer was drawn successfully. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{group__view_ga3dd6b5ba7e4dab9a1568f422c19c3ec3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__view_ga42f4903ab89aff9e3ee0206c52cf710a}\label{group__view_ga42f4903ab89aff9e3ee0206c52cf710a}} 
+\index{view@{view}!draw\_mouse@{draw\_mouse}}
+\index{draw\_mouse@{draw\_mouse}!view@{view}}
+\doxysubsubsection{\texorpdfstring{draw\_mouse()}{draw\_mouse()}}
+{\footnotesize\ttfamily void draw\+\_\+mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the mouse cursor based on the current state and position. 
+
+The \mbox{\hyperlink{group__view_ga42f4903ab89aff9e3ee0206c52cf710a}{draw\+\_\+mouse()}} function is responsible for rendering the mouse cursor on the screen. The appearance of the cursor depends on various conditions, including whether the mouse is over a clickable area or the game state and tool type. If the mouse is over a clickable area, a hand cursor sprite is drawn. In the game state, different cursors are displayed based on the selected tool\+: pencil, eraser, bucket, or a default mouse cursor. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__view_ga42f4903ab89aff9e3ee0206c52cf710a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__view_ga6db4230a0003a09515d78b790d8ec52d}\label{group__view_ga6db4230a0003a09515d78b790d8ec52d}} 
+\index{view@{view}!draw\_sprite\_xpm@{draw\_sprite\_xpm}}
+\index{draw\_sprite\_xpm@{draw\_sprite\_xpm}!view@{view}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite\_xpm()}{draw\_sprite\_xpm()}}
+{\footnotesize\ttfamily int draw\+\_\+sprite\+\_\+xpm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sprite,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draws a sprite on the screen at the specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & \mbox{\hyperlink{struct_sprite}{Sprite}} to be drawn. \\
+\hline
+{\em x} & X coordinate of where to be draw. \\
+\hline
+{\em y} & Y coordinate of where to be draw.\\
+\hline
+\end{DoxyParams}
+The \mbox{\hyperlink{group__view_ga6db4230a0003a09515d78b790d8ec52d}{draw\+\_\+sprite\+\_\+xpm()}} function takes a \mbox{\hyperlink{struct_sprite}{Sprite}} structure pointer representing the sprite to be drawn, and the (x, y) coordinates where the sprite should be positioned on the screen. The function retrieves the color information from the sprite\textquotesingle{}s colors array and uses the \mbox{\hyperlink{group__graphics_ga021aa9e0417e5176f0cb783b877c19da}{paint\+\_\+pixel()}} function to draw each pixel of the sprite at the corresponding position on the secondary frame buffer. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{group__view_ga6db4230a0003a09515d78b790d8ec52d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__view_gaeddc6e768c81b853d71b5f90b3e1dbfb}\label{group__view_gaeddc6e768c81b853d71b5f90b3e1dbfb}} 
+\index{view@{view}!draw\_tool\_outline@{draw\_tool\_outline}}
+\index{draw\_tool\_outline@{draw\_tool\_outline}!view@{view}}
+\doxysubsubsection{\texorpdfstring{draw\_tool\_outline()}{draw\_tool\_outline()}}
+{\footnotesize\ttfamily void draw\+\_\+tool\+\_\+outline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the outline of the selected drawing tool. 
+
+The \mbox{\hyperlink{group__view_gaeddc6e768c81b853d71b5f90b3e1dbfb}{draw\+\_\+tool\+\_\+outline()}} function checks the current selected drawing tool and draws the outline of the tool accordingly. It uses the \mbox{\hyperlink{group__view_ga6db4230a0003a09515d78b790d8ec52d}{draw\+\_\+sprite\+\_\+xpm()}} function to draw the outline sprite at the specified position. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__view_gaeddc6e768c81b853d71b5f90b3e1dbfb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__view_gafced46dd2087365054d1c1d71f181b8f}\label{group__view_gafced46dd2087365054d1c1d71f181b8f}} 
+\index{view@{view}!drawColor@{drawColor}}
+\index{drawColor@{drawColor}!view@{view}}
+\doxysubsubsection{\texorpdfstring{drawColor()}{drawColor()}}
+{\footnotesize\ttfamily void draw\+Color (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a solid color rectangle on the secondary frame buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X coordinate of the rectangle. \\
+\hline
+{\em y} & Y coordinate of the rectangle. \\
+\hline
+{\em width} & Width of the rectangle. \\
+\hline
+{\em height} & Height of the rectangle. \\
+\hline
+{\em color} & Color of the rectangle. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__view_ga92fe90a17ba95b7702b618ccfe7e77ba}\label{group__view_ga92fe90a17ba95b7702b618ccfe7e77ba}} 
+\index{view@{view}!drawLineSegment@{drawLineSegment}}
+\index{drawLineSegment@{drawLineSegment}!view@{view}}
+\doxysubsubsection{\texorpdfstring{drawLineSegment()}{drawLineSegment()}}
+{\footnotesize\ttfamily int draw\+Line\+Segment (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{xi,  }\item[{uint16\+\_\+t}]{yi,  }\item[{uint16\+\_\+t}]{xf,  }\item[{uint16\+\_\+t}]{yf,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a line segment between two points in each mouse interrupt on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xi} & The x-\/coordinate of the start point. \\
+\hline
+{\em yi} & The y-\/coordinate of the start point. \\
+\hline
+{\em xf} & The x-\/coordinate of the end point. \\
+\hline
+{\em yf} & The y-\/coordinate of the end point. \\
+\hline
+{\em color} & The color of the line segment.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the line segment was drawn successfully, 1 if there was an error while drawing. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__view_ga92fe90a17ba95b7702b618ccfe7e77ba_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__view_ga9c7affc2cddce92fb686db89c972d48c}\label{group__view_ga9c7affc2cddce92fb686db89c972d48c}} 
+\index{view@{view}!initialize\_number\_sprites@{initialize\_number\_sprites}}
+\index{initialize\_number\_sprites@{initialize\_number\_sprites}!view@{view}}
+\doxysubsubsection{\texorpdfstring{initialize\_number\_sprites()}{initialize\_number\_sprites()}}
+{\footnotesize\ttfamily void initialize\+\_\+number\+\_\+sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the number sprites used for displaying digits. 
+
+The \mbox{\hyperlink{group__view_ga9c7affc2cddce92fb686db89c972d48c}{initialize\+\_\+number\+\_\+sprites()}} function assigns the number sprite images to the corresponding elements in the number\+\_\+sprite array. Each sprite represents a digit from 0 to 9. \mbox{\Hypertarget{group__view_ga0309786986381ff4008d41f518d5aa50}\label{group__view_ga0309786986381ff4008d41f518d5aa50}} 
+\index{view@{view}!invert\_backup\_draw@{invert\_backup\_draw}}
+\index{invert\_backup\_draw@{invert\_backup\_draw}!view@{view}}
+\doxysubsubsection{\texorpdfstring{invert\_backup\_draw()}{invert\_backup\_draw()}}
+{\footnotesize\ttfamily void invert\+\_\+backup\+\_\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inverts the backup frame buffer to the current drawing. 
+
+The \mbox{\hyperlink{group__view_ga0309786986381ff4008d41f518d5aa50}{invert\+\_\+backup\+\_\+draw()}} function copies the contents of the current drawing in the third frame buffer to the backup frame buffer. It uses the memcpy() function to perform a memory copy operation. \mbox{\Hypertarget{group__view_ga7dbfe327ee927cdca33895b7a67b0b7e}\label{group__view_ga7dbfe327ee927cdca33895b7a67b0b7e}} 
+\index{view@{view}!processDrawing@{processDrawing}}
+\index{processDrawing@{processDrawing}!view@{view}}
+\doxysubsubsection{\texorpdfstring{processDrawing()}{processDrawing()}}
+{\footnotesize\ttfamily int process\+Drawing (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{prevX,  }\item[{int}]{prevY,  }\item[{uint32\+\_\+t}]{drawing\+Color }\end{DoxyParamCaption})}
+
+
+
+Process drawing operation between two points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the current point. \\
+\hline
+{\em y} & The y-\/coordinate of the current point. \\
+\hline
+{\em prevX} & The x-\/coordinate of the previous point. \\
+\hline
+{\em prevY} & The y-\/coordinate of the previous point. \\
+\hline
+{\em drawing\+Color} & The color to be used for drawing.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, indicating that the drawing operation was successful. 
+
+1 if the current point is outside the valid drawing region. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__view_ga7dbfe327ee927cdca33895b7a67b0b7e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__view_gab0f51d98fa07eefe31841507a9739abc}\label{group__view_gab0f51d98fa07eefe31841507a9739abc}} 
+\index{view@{view}!processRectangle@{processRectangle}}
+\index{processRectangle@{processRectangle}!view@{view}}
+\doxysubsubsection{\texorpdfstring{processRectangle()}{processRectangle()}}
+{\footnotesize\ttfamily int process\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{prevX,  }\item[{int}]{prevY,  }\item[{uint32\+\_\+t}]{drawing\+Color }\end{DoxyParamCaption})}
+
+
+
+Processes the drawing of a rectangle. 
+
+The \mbox{\hyperlink{group__view_gab0f51d98fa07eefe31841507a9739abc}{process\+Rectangle()}} function handles the drawing of a rectangle based on the given coordinates and drawing color. It checks if the y-\/coordinate is within a valid range and then determines the position and size of the rectangle based on the previous and current coordinates. The \mbox{\hyperlink{group__graphics_ga58517250fd31c8c16965744cce7ae2f1}{draw\+\_\+rectangle()}} function is called to draw the rectangle on the third frame buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the current position. \\
+\hline
+{\em y} & The y-\/coordinate of the current position. \\
+\hline
+{\em prevX} & The x-\/coordinate of the previous position. \\
+\hline
+{\em prevY} & The y-\/coordinate of the previous position. \\
+\hline
+{\em drawing\+Color} & The color of the rectangle to be drawn.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the rectangle was drawn successfully, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__view_gab0f51d98fa07eefe31841507a9739abc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__view_ga3ad9f04212e7602618a0dd7ad4afbd4e}\label{group__view_ga3ad9f04212e7602618a0dd7ad4afbd4e}} 
+\index{view@{view}!set\_frame\_buffers@{set\_frame\_buffers}}
+\index{set\_frame\_buffers@{set\_frame\_buffers}!view@{view}}
+\doxysubsubsection{\texorpdfstring{set\_frame\_buffers()}{set\_frame\_buffers()}}
+{\footnotesize\ttfamily int set\+\_\+frame\+\_\+buffers (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Sets up the frame buffers for the specified mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Mode to be used.\\
+\hline
+\end{DoxyParams}
+The \mbox{\hyperlink{group__view_ga3ad9f04212e7602618a0dd7ad4afbd4e}{set\+\_\+frame\+\_\+buffers()}} function initializes the frame buffers based on the specified mode. It first calls the \mbox{\hyperlink{group__graphics_ga2f32bdfa4852737cd328287a85c7afff}{set\+\_\+frame\+\_\+buffer()}} function to set up the main frame buffer. If the DOUBLE\+\_\+\+BUFFER flag is enabled, the function allocates memory for the secondary\+\_\+frame\+\_\+buffer, third\+\_\+frame\+\_\+buffer, and backup\+\_\+frame\+\_\+buffer. These buffers are used for double buffering, where one buffer is used for rendering while the other is displayed. This technique helps reduce flickering and provides smoother animations. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{group__view_ga3ad9f04212e7602618a0dd7ad4afbd4e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__view_gaface0710712eeff3c3721b361e2db58f}\label{group__view_gaface0710712eeff3c3721b361e2db58f}} 
+\index{view@{view}!updateClock@{updateClock}}
+\index{updateClock@{updateClock}!view@{view}}
+\doxysubsubsection{\texorpdfstring{updateClock()}{updateClock()}}
+{\footnotesize\ttfamily void update\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the clock display on the screen. 
+
+The \mbox{\hyperlink{group__view_gaface0710712eeff3c3721b361e2db58f}{update\+Clock()}} function retrieves the current time information and uses a set of number sprites to represent the hours, minutes, and seconds on the screen. It calculates the individual digits of the time values and draws the corresponding sprites at the appropriate positions on the screen. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__view_gaface0710712eeff3c3721b361e2db58f_cgraph}
+\end{center}
+\end{figure}

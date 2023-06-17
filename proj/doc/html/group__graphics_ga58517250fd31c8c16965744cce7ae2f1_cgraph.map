@@ -1,0 +1,5 @@
+<map id="draw_rectangle" name="draw_rectangle">
+<area shape="rect" id="node1" title="Draws rectangle starting in position (x,y) with width and height specified in parameters." alt="" coords="5,5,114,32"/>
+<area shape="rect" id="node2" href="$group__graphics.html#gaa80401a49b5ac32d66cfdab32257a686" title="Draws a horizontal line on the frame buffer." alt="" coords="162,5,244,32"/>
+<area shape="rect" id="node3" href="$group__graphics.html#ga021aa9e0417e5176f0cb783b877c19da" title="Paints pixel in certain position of certain color." alt="" coords="292,5,375,32"/>
+</map>

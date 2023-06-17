@@ -1,0 +1,6 @@
+<map id="rtc_update_time" name="rtc_update_time">
+<area shape="rect" id="node1" title="Updates the time information from the RTC module." alt="" coords="5,56,120,83"/>
+<area shape="rect" id="node2" href="$group__rtc.html#ga47d5762e49eb390b04a09fc319c4e047" title="Checks if the RTC module is currently updating its registers." alt="" coords="168,5,277,32"/>
+<area shape="rect" id="node3" href="$group__rtc.html#ga8e4030507a3afad53e5b80851f90d193" title="Reads a value from the RTC." alt="" coords="325,31,404,57"/>
+<area shape="rect" id="node4" href="$group__rtc.html#ga891509fed13e0cac396e9c401f887d72" title="Transforms a BCD number into binary." alt="" coords="185,107,260,133"/>
+</map>

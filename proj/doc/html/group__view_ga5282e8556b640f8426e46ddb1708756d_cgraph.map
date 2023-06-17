@@ -1,0 +1,9 @@
+<map id="draw_controls" name="draw_controls">
+<area shape="rect" id="node1" title="Handles user input and updates the drawing controls accordingly." alt="" coords="5,56,107,83"/>
+<area shape="rect" id="node2" href="$group__view.html#gad285a228f3fe778791b704007f3268bf" title="Backs up the current drawing to a backup frame buffer." alt="" coords="168,5,266,32"/>
+<area shape="rect" id="node3" href="$group__view.html#ga1baba5efbb19633a2599910f30d50bdd" title="Converts the colors of the current drawing to grayscale." alt="" coords="155,56,279,83"/>
+<area shape="rect" id="node6" href="$group__view.html#gaad11e5cc0615113ac553c2e20c03ec84" title="Inverts the color of the pixels on the third frame buffer." alt="" coords="176,107,258,133"/>
+<area shape="rect" id="node4" href="$group__graphics.html#ga31227f672745c8ab6360a5a1bcac283b" title="Converts a pixel to grayscale in the frame buffer." alt="" coords="338,31,450,57"/>
+<area shape="rect" id="node5" href="$group__view.html#ga0309786986381ff4008d41f518d5aa50" title="Inverts the backup frame buffer to the current drawing." alt="" coords="327,81,461,108"/>
+<area shape="rect" id="node7" href="$group__graphics.html#ga6c8cbff31c1e3d926b3571195a3d0b93" title="Inverts the color of a pixel in the frame buffer." alt="" coords="334,132,454,159"/>
+</map>

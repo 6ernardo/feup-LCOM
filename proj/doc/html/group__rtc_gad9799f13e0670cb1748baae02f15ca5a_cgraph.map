@@ -1,0 +1,5 @@
+<map id="rtc_is_bcd" name="rtc_is_bcd">
+<area shape="rect" id="node1" title="Checks if the RTC is in BCD mode." alt="" coords="5,5,87,32"/>
+<area shape="rect" id="node2" href="$group__rtc.html#ga5873dc86f56c4a2a8ea8f7faf07ef798" title="Checks if the RTC is in binary mode." alt="" coords="135,5,230,32"/>
+<area shape="rect" id="node3" href="$group__rtc.html#ga8e4030507a3afad53e5b80851f90d193" title="Reads a value from the RTC." alt="" coords="278,5,357,32"/>
+</map>

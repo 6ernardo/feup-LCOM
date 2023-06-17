@@ -1,0 +1,6 @@
+<map id="draw_header" name="draw_header">
+<area shape="rect" id="node1" title="Draws the header section of the game screen." alt="" coords="5,31,100,57"/>
+<area shape="rect" id="node2" href="$group__view.html#ga6db4230a0003a09515d78b790d8ec52d" title="Draws a sprite on the screen at the specified coordinates." alt="" coords="148,5,267,32"/>
+<area shape="rect" id="node4" href="$group__view.html#gafced46dd2087365054d1c1d71f181b8f" title="Draws a solid color rectangle on the secondary frame buffer." alt="" coords="168,56,247,83"/>
+<area shape="rect" id="node3" href="$group__graphics.html#ga021aa9e0417e5176f0cb783b877c19da" title="Paints pixel in certain position of certain color." alt="" coords="315,5,398,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="arrow_button_pressed" name="arrow_button_pressed">
+<area shape="rect" id="node1" title="Checks if the arrow button is pressed and handles its state." alt="" coords="5,5,154,32"/>
+<area shape="rect" id="node2" href="$group__view.html#gaddac27bc1ef2943686b5ca444e62dde8" title="Checks if the mouse cursor is over a sprite at the specified position." alt="" coords="202,5,331,32"/>
+</map>

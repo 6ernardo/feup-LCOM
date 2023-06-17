@@ -1,0 +1,95 @@
+\hypertarget{group__sprite}{}\doxysection{sprite}
+\label{group__sprite}\index{sprite@{sprite}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_sprite}{Sprite}}
+\begin{DoxyCompactList}\small\item\em Structure representing a sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_gacb93792ebc27a32413e0b31624c6d9b1}{create\+\_\+sprite\+\_\+xpm}} (xpm\+\_\+map\+\_\+t sprite)
+\begin{DoxyCompactList}\small\item\em Creates a sprite from an XPM image. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_ga13b8a2097c825d810049270eb4467d37}{create\+\_\+sprite\+\_\+button}} (uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Creates a button sprite with a solid color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__sprite_ga607cfeb4f019a84c346eb3bce9da0420}{destroy\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sprite)
+\begin{DoxyCompactList}\small\item\em Destroys a sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__sprite_ga7d2d72b3ea47dab6db0ada4b36017d7a}\label{group__sprite_ga7d2d72b3ea47dab6db0ada4b36017d7a}} 
+uint16\+\_\+t {\bfseries Sprite\+::height}
+\item 
+\mbox{\Hypertarget{group__sprite_ga126fa60a3de74e112dc5fa7ab1809f37}\label{group__sprite_ga126fa60a3de74e112dc5fa7ab1809f37}} 
+uint16\+\_\+t {\bfseries Sprite\+::width}
+\item 
+\mbox{\Hypertarget{group__sprite_ga394114f3fce04459a1593a68166c8621}\label{group__sprite_ga394114f3fce04459a1593a68166c8621}} 
+uint32\+\_\+t $\ast$ {\bfseries Sprite\+::colors}
+\item 
+\mbox{\Hypertarget{group__sprite_ga925050b598e308e3da33683aa2cb2aa7}\label{group__sprite_ga925050b598e308e3da33683aa2cb2aa7}} 
+uint32\+\_\+t {\bfseries Sprite\+::color}
+\item 
+\mbox{\Hypertarget{group__sprite_ga668e746bf8bc5b45228989b3868f6e2e}\label{group__sprite_ga668e746bf8bc5b45228989b3868f6e2e}} 
+uint8\+\_\+t {\bfseries Sprite\+::pressed}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using sprites 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__sprite_ga13b8a2097c825d810049270eb4467d37}\label{group__sprite_ga13b8a2097c825d810049270eb4467d37}} 
+\index{sprite@{sprite}!create\_sprite\_button@{create\_sprite\_button}}
+\index{create\_sprite\_button@{create\_sprite\_button}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{create\_sprite\_button()}{create\_sprite\_button()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ create\+\_\+sprite\+\_\+button (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Creates a button sprite with a solid color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the button sprite. \\
+\hline
+{\em height} & Height of the button sprite. \\
+\hline
+{\em color} & Color of the button sprite. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created \mbox{\hyperlink{struct_sprite}{Sprite}} structure if successful, NULL otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sprite_gacb93792ebc27a32413e0b31624c6d9b1}\label{group__sprite_gacb93792ebc27a32413e0b31624c6d9b1}} 
+\index{sprite@{sprite}!create\_sprite\_xpm@{create\_sprite\_xpm}}
+\index{create\_sprite\_xpm@{create\_sprite\_xpm}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{create\_sprite\_xpm()}{create\_sprite\_xpm()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ create\+\_\+sprite\+\_\+xpm (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{sprite }\end{DoxyParamCaption})}
+
+
+
+Creates a sprite from an XPM image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & XPM map representing the sprite image. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created \mbox{\hyperlink{struct_sprite}{Sprite}} structure if successful, NULL otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sprite_ga607cfeb4f019a84c346eb3bce9da0420}\label{group__sprite_ga607cfeb4f019a84c346eb3bce9da0420}} 
+\index{sprite@{sprite}!destroy\_sprite@{destroy\_sprite}}
+\index{destroy\_sprite@{destroy\_sprite}!sprite@{sprite}}
+\doxysubsubsection{\texorpdfstring{destroy\_sprite()}{destroy\_sprite()}}
+{\footnotesize\ttfamily void destroy\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sprite }\end{DoxyParamCaption})}
+
+
+
+Destroys a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & Pointer to the sprite to be destroyed. \\
+\hline
+\end{DoxyParams}

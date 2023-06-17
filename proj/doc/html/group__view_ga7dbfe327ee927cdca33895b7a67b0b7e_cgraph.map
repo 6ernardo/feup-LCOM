@@ -1,0 +1,6 @@
+<map id="processDrawing" name="processDrawing">
+<area shape="rect" id="node1" title="Process drawing operation between two points." alt="" coords="5,5,119,32"/>
+<area shape="rect" id="node2" href="$group__view.html#ga92fe90a17ba95b7702b618ccfe7e77ba" title="Draws a line segment between two points in each mouse interrupt on the screen." alt="" coords="167,5,291,32"/>
+<area shape="rect" id="node3" href="$group__view.html#ga3dd6b5ba7e4dab9a1568f422c19c3ec3" title="Draws a circular drawing pointer with the specified radius and color." alt="" coords="339,5,460,32"/>
+<area shape="rect" id="node4" href="$group__graphics.html#ga021aa9e0417e5176f0cb783b877c19da" title="Paints pixel in certain position of certain color." alt="" coords="508,5,592,32"/>
+</map>

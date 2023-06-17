@@ -1,0 +1,30 @@
+\hypertarget{graphics_8h_source}{}\doxysection{graphics.\+h}
+\label{graphics_8h_source}\index{C:/Users/jtoma/Downloads/MINIX-\/LCOM/MINIX-\/LCOM/shared/g4/proj/src/controller/video/graphics.h@{C:/Users/jtoma/Downloads/MINIX-\/LCOM/MINIX-\/LCOM/shared/g4/proj/src/controller/video/graphics.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_GRAPHICS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_GRAPHICS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}VBE.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{13 vbe\_mode\_info\_t mode\_info;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{21 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__graphics_ga0e3d9bbfc61cddd43017c484fcbbd93b}{set\_graphic\_mode}}( uint16\_t submode);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{28 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__graphics_gaa86357e516b83208fb5e6c5786d93880}{set\_text\_mode}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{38 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__graphics_ga2f32bdfa4852737cd328287a85c7afff}{set\_frame\_buffer}}(uint16\_t mode, uint8\_t **frame\_buffer);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{48 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__graphics_ga021aa9e0417e5176f0cb783b877c19da}{paint\_pixel}}(uint16\_t x, uint16\_t y, uint32\_t color, uint8\_t *frame\_buffer);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{61 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__graphics_gaa80401a49b5ac32d66cfdab32257a686}{draw\_hline}}(uint16\_t x, uint16\_t y, uint16\_t len, uint32\_t color, uint8\_t *frame\_buffer);}
+\DoxyCodeLine{70 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__graphics_ga58517250fd31c8c16965744cce7ae2f1}{draw\_rectangle}}(uint16\_t x, uint16\_t y, uint16\_t width, uint16\_t height, uint32\_t color, uint8\_t *frame\_buffer);}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{83 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__graphics_ga6c8cbff31c1e3d926b3571195a3d0b93}{invert\_pixel\_color}}(uint16\_t x, uint16\_t y, uint8\_t *frame\_buffer);}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{100 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__graphics_ga31227f672745c8ab6360a5a1bcac283b}{convert\_to\_gray}}(uint16\_t x, uint16\_t y, uint8\_t *frame\_buffer);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,62 @@
+\hypertarget{rtc_8h_source}{}\doxysection{rtc.\+h}
+\label{rtc_8h_source}\index{C:/Users/jtoma/Downloads/MINIX-\/LCOM/MINIX-\/LCOM/shared/g4/proj/src/controller/rtc/rtc.h@{C:/Users/jtoma/Downloads/MINIX-\/LCOM/MINIX-\/LCOM/shared/g4/proj/src/controller/rtc/rtc.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_LCOM\_RTC\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_LCOM\_RTC\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <minix/sysutil.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{14 \textcolor{comment}{// Macros}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define RTC\_MASK            5}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define IRQ\_RTC             8}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define REGISTER\_INPUT      0x70}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define REGISTER\_OUTPUT     0x71}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define REGISTER\_UPDATING   10}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define REGISTER\_COUNTING   11}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define SECONDS    0}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define MINUTES    2}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define HOURS      4   }}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define DAY        7}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define MONTH      8}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define YEAR       9}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define BINARY              BIT(2)}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#define UPDATING            BIT(7)}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{comment}{// Structure to hold real-\/time information}}
+\DoxyCodeLine{34 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{35     uint8\_t year;    }
+\DoxyCodeLine{36     uint8\_t month;   }
+\DoxyCodeLine{37     uint8\_t day;      }
+\DoxyCodeLine{38     uint8\_t hours;   }
+\DoxyCodeLine{39     uint8\_t minutes;  }
+\DoxyCodeLine{40     uint8\_t seconds;  }
+\DoxyCodeLine{41 \} \mbox{\hyperlink{structreal__time__info}{real\_time\_info}};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{comment}{// Function prototypes}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{48 \textcolor{keywordtype}{void} \mbox{\hyperlink{group__rtc_ga9e961a2e8e8309e4fd490ac35f68a293}{rtc\_setup}}();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{56 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__rtc_ga0420f18e3d3ce594093271df3b1e2af0}{rtc\_subscribe\_interrupts}}(uint8\_t *bit\_no);}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{63 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__rtc_gae0e5cb47db8832528abb7dc48255cd3a}{rtc\_unsubscribe\_interrupts}}();}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{72 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__rtc_ga8e4030507a3afad53e5b80851f90d193}{rtc\_output}}(uint8\_t command, uint8\_t *output);}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{79 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__rtc_ga47d5762e49eb390b04a09fc319c4e047}{rtc\_is\_updating}}();}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{86 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__rtc_ga5873dc86f56c4a2a8ea8f7faf07ef798}{rtc\_is\_binary}}();}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{93 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__rtc_gad9799f13e0670cb1748baae02f15ca5a}{rtc\_is\_bcd}}();}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{100 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__rtc_gae22bdeb51eb630e1d579dfc1cd1b2f11}{rtc\_update\_time}}();}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{108 uint8\_t \mbox{\hyperlink{group__rtc_ga891509fed13e0cac396e9c401f887d72}{to\_binary}}(uint8\_t bcd\_number);}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{112 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* \_LCOM\_RTC\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

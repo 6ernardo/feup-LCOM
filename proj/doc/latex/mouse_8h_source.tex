@@ -1,0 +1,42 @@
+\hypertarget{mouse_8h_source}{}\doxysection{mouse.\+h}
+\label{mouse_8h_source}\index{C:/Users/jtoma/Downloads/MINIX-\/LCOM/MINIX-\/LCOM/shared/g4/proj/src/controller/mouse/mouse.h@{C:/Users/jtoma/Downloads/MINIX-\/LCOM/MINIX-\/LCOM/shared/g4/proj/src/controller/mouse/mouse.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_LCOM\_MOUSE\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_LCOM\_MOUSE\_H\_}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <minix/sysutil.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}i8042.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}controller/KBC/KBC.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{20 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{21     uint8\_t right\_click;}
+\DoxyCodeLine{22     uint8\_t left\_click;}
+\DoxyCodeLine{23     uint8\_t middle\_click;}
+\DoxyCodeLine{24     int16\_t x;}
+\DoxyCodeLine{25     int16\_t y;}
+\DoxyCodeLine{26 \} \mbox{\hyperlink{struct_mouse_info}{MouseInfo}};  }
+\DoxyCodeLine{27 }
+\DoxyCodeLine{33 int (\mbox{\hyperlink{group__mouse_ga20285aed4b3ef45812cd967532dd09db}{mouse\_subscribe\_int}})(uint8\_t *bit\_no);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{40 int (\mbox{\hyperlink{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}{mouse\_unsubscribe\_int}})();}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{46 void (\mbox{\hyperlink{group__mouse_ga210374b50462acdedab00df64d5cea3c}{mouse\_ih}})();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{52 \textcolor{keywordtype}{void} \mbox{\hyperlink{group__mouse_ga8d6ee7592c47e8f3830a140c1c36587d}{mouse\_sync\_bytes}}();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{58 void (\mbox{\hyperlink{group__mouse_ga2e235868a79d1a554279c352e8a19f59}{mouse\_bytes\_to\_packet}})();}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{66 int (\mbox{\hyperlink{group__mouse_ga1703c3c5b61eef30d724b15cafd1d75e}{mouse\_write}})(uint8\_t command);}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{73 int(\mbox{\hyperlink{group__mouse_ga8ede930d34433ca1e2cce6990d7a9898}{mouse\_read\_data}})();}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{keywordtype}{int} getX();}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77 \textcolor{keywordtype}{int} getY();}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,5 @@
+<map id="draw_tool_outline" name="draw_tool_outline">
+<area shape="rect" id="node1" title="Draws the outline of the selected drawing tool." alt="" coords="5,5,127,32"/>
+<area shape="rect" id="node2" href="$group__view.html#ga6db4230a0003a09515d78b790d8ec52d" title="Draws a sprite on the screen at the specified coordinates." alt="" coords="175,5,294,32"/>
+<area shape="rect" id="node3" href="$group__graphics.html#ga021aa9e0417e5176f0cb783b877c19da" title="Paints pixel in certain position of certain color." alt="" coords="342,5,425,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="rtc_is_updating" name="rtc_is_updating">
+<area shape="rect" id="node1" title="Checks if the RTC module is currently updating its registers." alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node2" href="$group__rtc.html#ga8e4030507a3afad53e5b80851f90d193" title="Reads a value from the RTC." alt="" coords="163,5,242,32"/>
+</map>

@@ -1,0 +1,229 @@
+\hypertarget{group__rtc}{}\doxysection{RTC}
+\label{group__rtc}\index{RTC@{RTC}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structreal__time__info}{real\+\_\+time\+\_\+info}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__rtc_gab54f2d18b47b47a59f718e16099446e8}\label{group__rtc_gab54f2d18b47b47a59f718e16099446e8}} 
+\#define {\bfseries RTC\+\_\+\+MASK}~5
+\item 
+\mbox{\Hypertarget{group__rtc_ga910ac5f2c1b4016e433f9832358a1816}\label{group__rtc_ga910ac5f2c1b4016e433f9832358a1816}} 
+\#define {\bfseries IRQ\+\_\+\+RTC}~8
+\item 
+\mbox{\Hypertarget{group__rtc_gac7ccdd8e98d8f7fdad8dfe99c467d5d8}\label{group__rtc_gac7ccdd8e98d8f7fdad8dfe99c467d5d8}} 
+\#define {\bfseries REGISTER\+\_\+\+INPUT}~0x70
+\item 
+\mbox{\Hypertarget{group__rtc_ga5e3f3a35c56673c2a54d9f4eadb759a9}\label{group__rtc_ga5e3f3a35c56673c2a54d9f4eadb759a9}} 
+\#define {\bfseries REGISTER\+\_\+\+OUTPUT}~0x71
+\item 
+\mbox{\Hypertarget{group__rtc_ga79c0bb250ad248af29b370b20dd1fb29}\label{group__rtc_ga79c0bb250ad248af29b370b20dd1fb29}} 
+\#define {\bfseries REGISTER\+\_\+\+UPDATING}~10
+\item 
+\mbox{\Hypertarget{group__rtc_gac261047d18c2505db97b38b7b157f1fd}\label{group__rtc_gac261047d18c2505db97b38b7b157f1fd}} 
+\#define {\bfseries REGISTER\+\_\+\+COUNTING}~11
+\item 
+\mbox{\Hypertarget{group__rtc_ga48fcf4f2eeef6769d588168d4ac2ab0e}\label{group__rtc_ga48fcf4f2eeef6769d588168d4ac2ab0e}} 
+\#define {\bfseries SECONDS}~0
+\item 
+\mbox{\Hypertarget{group__rtc_ga84be9dcfa5a172ee83121620d15c8e29}\label{group__rtc_ga84be9dcfa5a172ee83121620d15c8e29}} 
+\#define {\bfseries MINUTES}~2
+\item 
+\mbox{\Hypertarget{group__rtc_ga212d0f839f6f7ca43ccde311f93d5892}\label{group__rtc_ga212d0f839f6f7ca43ccde311f93d5892}} 
+\#define {\bfseries HOURS}~4
+\item 
+\mbox{\Hypertarget{group__rtc_ga509a01c55cbe47386fe24602b7c7fda1}\label{group__rtc_ga509a01c55cbe47386fe24602b7c7fda1}} 
+\#define {\bfseries DAY}~7
+\item 
+\mbox{\Hypertarget{group__rtc_ga3729d06495d9713592f79f3122c9e677}\label{group__rtc_ga3729d06495d9713592f79f3122c9e677}} 
+\#define {\bfseries MONTH}~8
+\item 
+\mbox{\Hypertarget{group__rtc_ga5871356500f559add06ea81d60331b1b}\label{group__rtc_ga5871356500f559add06ea81d60331b1b}} 
+\#define {\bfseries YEAR}~9
+\item 
+\mbox{\Hypertarget{group__rtc_gacc166508d5cfbf4100f8622ce97f4985}\label{group__rtc_gacc166508d5cfbf4100f8622ce97f4985}} 
+\#define {\bfseries BINARY}~BIT(2)
+\item 
+\mbox{\Hypertarget{group__rtc_gae07bc1582ec2a0d53dd74350b5a19c5e}\label{group__rtc_gae07bc1582ec2a0d53dd74350b5a19c5e}} 
+\#define {\bfseries UPDATING}~BIT(7)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__rtc_ga9e961a2e8e8309e4fd490ac35f68a293}\label{group__rtc_ga9e961a2e8e8309e4fd490ac35f68a293}} 
+void {\bfseries rtc\+\_\+setup} ()
+\begin{DoxyCompactList}\small\item\em Sets up the RTC. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_ga0420f18e3d3ce594093271df3b1e2af0}{rtc\+\_\+subscribe\+\_\+interrupts}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes RTC interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_gae0e5cb47db8832528abb7dc48255cd3a}{rtc\+\_\+unsubscribe\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes RTC interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_ga8e4030507a3afad53e5b80851f90d193}{rtc\+\_\+output}} (uint8\+\_\+t command, uint8\+\_\+t $\ast$output)
+\begin{DoxyCompactList}\small\item\em Reads a value from the RTC. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_ga47d5762e49eb390b04a09fc319c4e047}{rtc\+\_\+is\+\_\+updating}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the RTC module is currently updating its registers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_ga5873dc86f56c4a2a8ea8f7faf07ef798}{rtc\+\_\+is\+\_\+binary}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the RTC is in binary mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_gad9799f13e0670cb1748baae02f15ca5a}{rtc\+\_\+is\+\_\+bcd}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the RTC is in BCD mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_gae22bdeb51eb630e1d579dfc1cd1b2f11}{rtc\+\_\+update\+\_\+time}} ()
+\begin{DoxyCompactList}\small\item\em Updates the time information from the RTC module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__rtc_ga891509fed13e0cac396e9c401f887d72}{to\+\_\+binary}} (uint8\+\_\+t bcd\+\_\+number)
+\begin{DoxyCompactList}\small\item\em Transforms a BCD number into binary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions and definitions for interacting with the Real-\/\+Time Clock (RTC). 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__rtc_gad9799f13e0670cb1748baae02f15ca5a}\label{group__rtc_gad9799f13e0670cb1748baae02f15ca5a}} 
+\index{RTC@{RTC}!rtc\_is\_bcd@{rtc\_is\_bcd}}
+\index{rtc\_is\_bcd@{rtc\_is\_bcd}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{rtc\_is\_bcd()}{rtc\_is\_bcd()}}
+{\footnotesize\ttfamily int rtc\+\_\+is\+\_\+bcd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the RTC is in BCD mode. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{group__rtc_gad9799f13e0670cb1748baae02f15ca5a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga5873dc86f56c4a2a8ea8f7faf07ef798}\label{group__rtc_ga5873dc86f56c4a2a8ea8f7faf07ef798}} 
+\index{RTC@{RTC}!rtc\_is\_binary@{rtc\_is\_binary}}
+\index{rtc\_is\_binary@{rtc\_is\_binary}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{rtc\_is\_binary()}{rtc\_is\_binary()}}
+{\footnotesize\ttfamily int rtc\+\_\+is\+\_\+binary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the RTC is in binary mode. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{group__rtc_ga5873dc86f56c4a2a8ea8f7faf07ef798_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga47d5762e49eb390b04a09fc319c4e047}\label{group__rtc_ga47d5762e49eb390b04a09fc319c4e047}} 
+\index{RTC@{RTC}!rtc\_is\_updating@{rtc\_is\_updating}}
+\index{rtc\_is\_updating@{rtc\_is\_updating}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{rtc\_is\_updating()}{rtc\_is\_updating()}}
+{\footnotesize\ttfamily int rtc\+\_\+is\+\_\+updating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the RTC module is currently updating its registers. 
+
+\begin{DoxyReturn}{Returns}
+0 if the RTC is not updating its registers, 1 if it is updating. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{group__rtc_ga47d5762e49eb390b04a09fc319c4e047_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga8e4030507a3afad53e5b80851f90d193}\label{group__rtc_ga8e4030507a3afad53e5b80851f90d193}} 
+\index{RTC@{RTC}!rtc\_output@{rtc\_output}}
+\index{rtc\_output@{rtc\_output}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{rtc\_output()}{rtc\_output()}}
+{\footnotesize\ttfamily int rtc\+\_\+output (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command,  }\item[{uint8\+\_\+t $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+Reads a value from the RTC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & Command to be sent to the RTC. \\
+\hline
+{\em output} & Pointer to the variable where the output will be stored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, non-\/zero otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtc_ga0420f18e3d3ce594093271df3b1e2af0}\label{group__rtc_ga0420f18e3d3ce594093271df3b1e2af0}} 
+\index{RTC@{RTC}!rtc\_subscribe\_interrupts@{rtc\_subscribe\_interrupts}}
+\index{rtc\_subscribe\_interrupts@{rtc\_subscribe\_interrupts}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{rtc\_subscribe\_interrupts()}{rtc\_subscribe\_interrupts()}}
+{\footnotesize\ttfamily int rtc\+\_\+subscribe\+\_\+interrupts (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes RTC interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Address of memory to store the RTC interrupt bit number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, non-\/zero otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtc_gae0e5cb47db8832528abb7dc48255cd3a}\label{group__rtc_gae0e5cb47db8832528abb7dc48255cd3a}} 
+\index{RTC@{RTC}!rtc\_unsubscribe\_interrupts@{rtc\_unsubscribe\_interrupts}}
+\index{rtc\_unsubscribe\_interrupts@{rtc\_unsubscribe\_interrupts}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{rtc\_unsubscribe\_interrupts()}{rtc\_unsubscribe\_interrupts()}}
+{\footnotesize\ttfamily int rtc\+\_\+unsubscribe\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes RTC interrupts. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, non-\/zero otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtc_gae22bdeb51eb630e1d579dfc1cd1b2f11}\label{group__rtc_gae22bdeb51eb630e1d579dfc1cd1b2f11}} 
+\index{RTC@{RTC}!rtc\_update\_time@{rtc\_update\_time}}
+\index{rtc\_update\_time@{rtc\_update\_time}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{rtc\_update\_time()}{rtc\_update\_time()}}
+{\footnotesize\ttfamily int rtc\+\_\+update\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the time information from the RTC module. 
+
+\begin{DoxyReturn}{Returns}
+0 if the time information is successfully retrieved and updated, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_gae22bdeb51eb630e1d579dfc1cd1b2f11_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga891509fed13e0cac396e9c401f887d72}\label{group__rtc_ga891509fed13e0cac396e9c401f887d72}} 
+\index{RTC@{RTC}!to\_binary@{to\_binary}}
+\index{to\_binary@{to\_binary}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{to\_binary()}{to\_binary()}}
+{\footnotesize\ttfamily uint8\+\_\+t to\+\_\+binary (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{bcd\+\_\+number }\end{DoxyParamCaption})}
+
+
+
+Transforms a BCD number into binary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bcd\+\_\+number} & BCD number to be transformed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The binary number. 
+\end{DoxyReturn}
